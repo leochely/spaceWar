@@ -1,38 +1,18 @@
 {
-    "id": "ff3427e8-49a1-4386-9892-00b7aa595940",
+    "id": "4589dc23-5577-4754-8506-fab7b1184a7b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objSpaceShip",
+    "name": "objMissile",
     "eventList": [
         {
-            "id": "1bd74711-a087-4cd8-a00d-30234db7d6c6",
+            "id": "90beaa72-c27e-4b1e-856e-c01272f3d115",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "ff3427e8-49a1-4386-9892-00b7aa595940"
-        },
-        {
-            "id": "b256fd45-ba31-42f2-b936-bfa7852089f7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 32,
-            "eventtype": 9,
-            "m_owner": "ff3427e8-49a1-4386-9892-00b7aa595940"
-        },
-        {
-            "id": "b6e782db-1e48-4443-8c75-f8bfb395c051",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "ff3427e8-49a1-4386-9892-00b7aa595940"
+            "m_owner": "4589dc23-5577-4754-8506-fab7b1184a7b"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,35 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "26817b93-43b6-47fd-897a-74f67fcb3b88",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "accX",
-            "varType": 0
-        },
-        {
-            "id": "0168931e-fe89-4736-b1b1-b1d8dacdca55",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "accY",
-            "varType": 0
-        },
-        {
-            "id": "e0617ac2-049a-4cce-b497-b75b18327376",
+            "id": "d6e81144-2f77-4672-9a16-978ddd27dda0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -95,7 +47,7 @@
             "varType": 0
         },
         {
-            "id": "e0bde535-ae7a-45b2-a1c2-66a157fe2fbf",
+            "id": "32d76274-597f-4fa1-a533-a1e79fd57123",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -109,21 +61,7 @@
             "varType": 0
         },
         {
-            "id": "fa4146dc-58c9-48cb-9282-a6d86858cd8f",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0.01",
-            "varName": "THROTTLE",
-            "varType": 0
-        },
-        {
-            "id": "a0289ca9-5a43-4e48-9b0c-b36e7684bd27",
+            "id": "17def303-7dbc-4ed5-92da-a5f7e833c12a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -133,11 +71,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "lastMissile",
+            "varName": "VEL",
             "varType": 0
         },
         {
-            "id": "1b9c7651-901e-459f-a8eb-181c9a4c1976",
+            "id": "ff317796-c00c-4de2-a5c1-545c4c0065fd",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -146,12 +84,26 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "300",
+            "value": "0.5",
+            "varName": "ACC",
+            "varType": 0
+        },
+        {
+            "id": "3dc45282-d1a1-4620-a468-c5e3f1538c5f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "500 ",
             "varName": "MAX_SPEED",
             "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "14fb68b0-5baa-45b4-9c6c-e70b5244a75f",
+    "spriteId": "87a002e6-5ed8-4a10-b922-d333cf4c8287",
     "visible": true
 }

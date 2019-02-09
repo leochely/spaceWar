@@ -7,8 +7,11 @@ if keyboard_check(vk_up){
 	accX = THROTTLE * cos(degtorad(image_angle));
 	accY = -THROTTLE * sin(degtorad(image_angle));
 }
-else sprite_index = sprSpaceShip;
-
+else{
+	sprite_index = sprSpaceShip;
+	accX = 0;
+	accY = 0;
+}
 
 
 if velX < MAX_SPEED velX += accX;
@@ -18,3 +21,4 @@ x += velX;
 y += velY;
 
 move_wrap(true, true, sprite_width);
+
