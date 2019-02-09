@@ -11,8 +11,8 @@ else sprite_index = sprSpaceShip;
 
 
 
-velX += accX;
-velY += accY;
+if velX < MAX_SPEED velX += accX;
+if velY < MAX_SPEED velY += accY;
 
 x += velX;
 y += velY;
