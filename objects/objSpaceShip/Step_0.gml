@@ -2,15 +2,20 @@
 
 if keyboard_check(vk_left) image_angle += 5;
 if keyboard_check(vk_right) image_angle -= 5;
+
+xR = x - 448;
+yR = y - 448;
+rMag= sqrt( xR*xR+ yR*yR) ;
+
 if keyboard_check(vk_up){
 	sprite_index = sprSpaceShipThrottle;
-	accX = THROTTLE * cos(degtorad(image_angle));
-	accY = -THROTTLE * sin(degtorad(image_angle));
+	accX = - GRAV * xR / (rMag * rMag * rMag) + THROTTLE * cos(degtorad(image_angle));
+	accY = - GRAV * yR / (rMag * rMag * rMag) - THROTTLE * sin(degtorad(image_angle));
 }
 else{
 	sprite_index = sprSpaceShip;
-	accX = 0;
-	accY = 0;
+	accX = - GRAV * xR / (rMag * rMag * rMag) ;
+	accY = - GRAV * yR / (rMag * rMag * rMag) ;
 }
 
 
@@ -20,5 +25,5 @@ if velY < MAX_SPEED velY += accY;
 x += velX;
 y += velY;
 
-move_wrap(true, true, sprite_width);
+move_wrap(true, true, 5*sprite_width);
 
