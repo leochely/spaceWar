@@ -84,7 +84,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
+            "value": "0.01",
             "varName": "ACC",
             "varType": 0
         },
@@ -100,6 +100,20 @@
             "resourceFilter": 1023,
             "value": "500 ",
             "varName": "MAX_SPEED",
+            "varType": 0
+        },
+        {
+            "id": "3619e26c-fd87-4258-a521-ff4bb8391d2c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "600",
+            "varName": "GRAV",
             "varType": 0
         }
     ],
