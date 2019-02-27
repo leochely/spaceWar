@@ -1,7 +1,7 @@
 /// @description Step
 
-xR = x - 448;
-yR = y - 448;
+xR = x - objSun;
+yR = y - objSun;
 rMag= sqrt( xR*xR+ yR*yR) ;
 
 accX = - GRAV * xR / (rMag * rMag * rMag)
