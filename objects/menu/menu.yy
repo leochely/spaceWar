@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "42d91328-53e9-4239-8fef-1a5117527fc5"
+        },
+        {
+            "id": "bcfb33f8-0495-41f0-8df1-64ac0a0cff93",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "42d91328-53e9-4239-8fef-1a5117527fc5"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -62,8 +72,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
-            "varName": "BUTTON_",
+            "value": "40",
+            "varName": "BUTTON_HEIGHT",
             "varType": 1
         }
     ],
