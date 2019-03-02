@@ -26,5 +26,5 @@ if(!objGame.gameOver){
 	x += velX;
 	y += velY;
 
-	move_wrap(true, true, 5*sprite_width);
+	move_wrap(true, true, sprite_width);
 }
